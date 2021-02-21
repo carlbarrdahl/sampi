@@ -3,19 +3,44 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "3id-connect": "^1.0.0-alpha.15",
+    "@bytemd/plugin-gfm": "^1.3.2",
+    "@bytemd/plugin-highlight": "^1.3.0",
+    "@bytemd/react": "^1.3.4",
+    "@ceramicnetwork/http-client": "^0.9.6",
+    "@ceramicstudio/idx": "^0.7.0",
+    "@ceramicstudio/idx-tools": "^0.7.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/runtime": "^1.6.22",
+    "@rjsf/core": "^2.4.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
+    "@theme-ui/preset-swiss": "^0.3.5",
+    "@theme-ui/preset-tosh": "^0.3.5",
+    "@theme-ui/presets": "^0.3.5",
+    "@walletconnect/web3-provider": "^1.3.6",
+    "authereum": "^0.1.0",
+    "github-markdown-css": "^4.0.0",
+    "highlight.js": "^10.6.0",
+    "key-did-provider-ed25519": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.2",
-    "web-vitals": "^1.1.0"
+    "react-use": "^17.1.1",
+    "theme-ui": "^0.3.5",
+    "web-vitals": "^1.1.0",
+    "web3modal": "^1.9.3",
+    "wouter": "^2.7.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bootstrap": "node ./bootstrap.js",
+    "ceramic": "ceramic daemon"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +59,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@ceramicnetwork/cli": "^0.20.8"
   }
 }

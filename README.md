@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# What is ϡ?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<Grid width={[ 128, null, 192 ]}>
+<AspectImage ratio={16/9} src="https://images.unsplash.com/photo-1522794338816-ee3a17a00ae8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"/>
+<AspectImage ratio={16/9} src="https://images.unsplash.com/photo-1594050753831-ebf4b3b52af7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80" />
+<AspectImage ratio={16/9} src="https://images.unsplash.com/photo-1597559660288-29a2e2518036?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1392&q=80" />
+</Grid>
 
-## Available Scripts
+Write and publish censorship-proof articles with verifiable signatures from authors.
 
-In the project directory, you can run:
+- Write posts in Markdown
+- Publish to ceramic.network for censorship-proof and verifiable signatures
+- Curate feeds of interesting content
+- Follow other content creators feeds
+- Subscribe to ActivityStreams using HTTP (similar to RSS)
 
-### `npm start`
+Inspired by Medium, are.na, RSS and ActivityStreams.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Example feed with multiple different types of content (audio, image, article):
+https://sampi.on.fleek.co/feed/did:3:kjzl6cwe1jw146v3thhilgu50851kgs2esq18e3kr6cvy4ho6mb75r8d4ffg8cn
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### How does it work?
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- A schema is defined based on the ActivityStream object.
+- Markdown is parsed with MDX so in addition to standard Markdown you can use html.
+- Document is passed as scope so you can access variables from editor (`id`, `content`, `metadata`, `anchorProof`, `log`)
