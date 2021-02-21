@@ -4,7 +4,8 @@ const { createDefinition, publishSchema } = require("@ceramicstudio/idx-tools");
 const { Ed25519Provider } = require("key-did-provider-ed25519");
 const fromString = require("uint8arrays/from-string");
 
-const CERAMIC_URL = "http://localhost:7007";
+const CERAMIC_URL =
+  "https://ceramic-clay.3boxlabs.com" || "http://localhost:7007";
 
 const ActivityStreamSchema = {
   $schema: "http://json-schema.org/draft-07/schema#",
