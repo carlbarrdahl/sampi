@@ -11,7 +11,7 @@ Write and publish censorship-proof articles with verifiable signatures from auth
 Inspired by Medium, are.na, RSS and ActivityStreams.
 
 Example feed with multiple different types of content (audio, image, article):
-https://sampi.on.fleek.co/feed/did:3:kjzl6cwe1jw146v3thhilgu50851kgs2esq18e3kr6cvy4ho6mb75r8d4ffg8cn
+https://sampi.on.fleek.co/#/feed/did:3:kjzl6cwe1jw146v3thhilgu50851kgs2esq18e3kr6cvy4ho6mb75r8d4ffg8cn
 
 ### How does it work?
 
