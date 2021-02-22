@@ -22,6 +22,10 @@ const maxWidth = 1024;
 
 export default {
   ...theme,
+  fonts: {
+    ...theme.fonts,
+    body: "monospace",
+  },
   component: {
     header: {
       display: "flex",
