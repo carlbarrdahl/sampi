@@ -13,6 +13,7 @@ const formDefaults = {
 const buttonDefaults = {
   //borderRadius: 0,
   cursor: "pointer",
+  fontFamily: "body",
   transition: ".1s opacity",
   "&:hover": {
     opacity: 0.8,
@@ -23,8 +24,9 @@ const maxWidth = 1024;
 export default {
   ...theme,
   fonts: {
-    ...theme.fonts,
     body: "monospace",
+    heading: "monospace",
+    monospace: "monospace",
   },
   component: {
     header: {
