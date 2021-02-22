@@ -50,6 +50,9 @@ const FeedPage = ({ params }) => {
   const state = useIdx("feed", params.did);
 
   console.log("feed", state);
+  if (state.loading) {
+    return <pre>loading feed...</pre>;
+  }
   return (
     <div>
       <Flex sx={{ justifyContent: "space-between", alignItems: "center" }}>

@@ -8,6 +8,8 @@ import { useDocument, useCreateDocument } from "../hooks/document";
 import Button from "../components/Button";
 
 import { schemas } from "../config.json";
+import Editor from "../components/Editor";
+import { useState } from "react";
 
 const SchemaForm = ({ schema, onSubmit }) => {
   return (
@@ -28,22 +30,29 @@ const SchemaForm = ({ schema, onSubmit }) => {
 };
 
 const PostCreate = (props) => {
+  const [isCreating, setCreating] = useState(false);
   const [location, setLocation] = useLocation();
-  const state = useDocument(schemas.ActivityStream);
+  const state = useDocument(schemas.ActivityStreamObject);
   const [data, createDocument] = useCreateDocument();
   console.log("state", state);
   console.log("data", data);
   if (state.loading) {
     return <pre>loading schema...</pre>;
   }
+  if (isCreating) {
+    return <pre>creating post...</pre>;
+  }
   return (
-    <SchemaForm
+    <Editor
       schema={state?.value?.content}
       onSubmit={({ formData }) => {
+        setCreating(true);
         createDocument({
           content: { ...formData, published: new Date().toISOString() },
-          metadata: { schema: schemas.ActivityStream },
-        }).then((docId) => setLocation(`/post/${docId}`));
+          metadata: { schema: schemas.ActivityStreamObject },
+        })
+          .then((docId) => setLocation(`/post/${docId}`))
+          .catch(() => setCreating(false));
       }}
     />
   );

@@ -10,7 +10,6 @@ fieldset {
 }
 
 .bytemd {
-  height: 100% !important;
   max-height: 80vh;
   overflow-y: scroll;
 }

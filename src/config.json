@@ -1,1 +1,9 @@
-{"definitions":{"feed":"kjzl6cwe1jw149zuiqzkmnqn2w7x5sf8esrxezldxci3mw438vdtcn8d85ohxvm","following":"kjzl6cwe1jw14aexctclcy1vz4dzld2gn0py3zxo42b8miq7o77yrie0437a5pn"},"schemas":{"ActivityStreamObject":"ceramic://k3y52l7qbv1fryhi84dfvk8f42ro56jf8nsalq9ug31mp44avc1amqt366bzu6dq8"}}
+{
+  "definitions": {
+    "feed": "kjzl6cwe1jw149zuiqzkmnqn2w7x5sf8esrxezldxci3mw438vdtcn8d85ohxvm",
+    "following": "kjzl6cwe1jw14aexctclcy1vz4dzld2gn0py3zxo42b8miq7o77yrie0437a5pn"
+  },
+  "schemas": {
+    "ActivityStreamObject": "ceramic://k3y52l7qbv1fryhi84dfvk8f42ro56jf8nsalq9ug31mp44avc1amqt366bzu6dq8"
+  }
+}
